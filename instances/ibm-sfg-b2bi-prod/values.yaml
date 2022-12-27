@@ -192,6 +192,12 @@ ibm-sfg-prod:
           nodePort: 30004
           protocol: TCP
       extraPorts: []
+        sftp:
+          name: sftp
+          port: 35007
+          targetPort: sftp
+          nodePort: 35007
+          protocol: TCP
         #-name: http-1
         # port: 37000
         # targetPort: http
